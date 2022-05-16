@@ -25,4 +25,4 @@ snarkjs zkey export verificationkey circuit_final.zkey verification_key.json
 # generate solidity contract
 snarkjs zkey export solidityverifier circuit_final.zkey ../contracts/verifier.sol
 
-cd ..
+cd ..   

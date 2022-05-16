@@ -69,8 +69,14 @@ describe("MerkleTree", function () {
         const c = [argv[6], argv[7]];
         const input = argv.slice(8);
 
-        expect(await merkleTree.verify(a, b, c, input)).to.be.true;
+        //delete later
+        const root = (await merkleTree.hashes(14)).toString();
+        console.log(root);
+        console.log("that was root^");
+        console.log(Input);
 
+        expect(await merkleTree.verify(a, b, c, input)).to.be.true;
+        
         // [bonus] verify the second leaf with the inclusion proof
     });
 });
